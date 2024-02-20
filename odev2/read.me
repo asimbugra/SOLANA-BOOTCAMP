@@ -1,17 +1,23 @@
-Bu basit Rust programı, farklı yayın türlerini temsil etmek için Publication adlı bir enum ve bu enum içindeki özel türler olan Book ve Magazine yapılarıyla birlikte kullanılmaktadır. Program, bu yapıları kullanarak bir kitap ve bir dergiyi temsil etmekte ve ardından bu yayınları bir vektör içinde depolamaktadır.
+Rust Publication Enum
 
-Yapılar (Structs)
-1. Book
-Book yapısı, bir kitabı temsil eder ve aşağıdaki özelliklere sahiptir:
+Overview
+This Rust project showcases the use of an enum named Publication to represent various publication types, including Book and Magazine. Each enum variant holds specific information about the publication, such as title, author, page count, issue, and topic.
 
-title: Kitabın başlığı (String türünde)
-author: Kitabın yazarı (String türünde)
-page_count: Kitabın sayfa sayısı (u32 türünde)
-2. Magazine
-Magazine yapısı, bir dergiyi temsil eder ve şu özelliklere sahiptir:
+Structures
+Book
+title: The title of the book.
+author: The author of the book.
+page_count: The number of pages in the book.
+Magazine
+title: The title of the magazine.
+issue: The issue of the magazine.
+topic: The topic of the magazine.
+Usage
+The main program creates instances of Book and Magazine, adds them to a vector of Publication, and iterates through the vector to print information about each publication.
 
-title: Derginin başlığı (String türünde)
-issue: Derginin sayısı veya tarihi (String türünde)
-topic: Derginin konusu (String türünde)
-Enum (Publication)
-Publication enum'u, Book ve Magazine yapıları arasında bir yayını temsil eden iki varyant içerir.
+How to Run:
+
+cargo build
+
+cargo run
+
