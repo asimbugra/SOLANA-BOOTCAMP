@@ -1,0 +1,17 @@
+Bu basit Rust programı, farklı yayın türlerini temsil etmek için Publication adlı bir enum ve bu enum içindeki özel türler olan Book ve Magazine yapılarıyla birlikte kullanılmaktadır. Program, bu yapıları kullanarak bir kitap ve bir dergiyi temsil etmekte ve ardından bu yayınları bir vektör içinde depolamaktadır.
+
+Yapılar (Structs)
+1. Book
+Book yapısı, bir kitabı temsil eder ve aşağıdaki özelliklere sahiptir:
+
+title: Kitabın başlığı (String türünde)
+author: Kitabın yazarı (String türünde)
+page_count: Kitabın sayfa sayısı (u32 türünde)
+2. Magazine
+Magazine yapısı, bir dergiyi temsil eder ve şu özelliklere sahiptir:
+
+title: Derginin başlığı (String türünde)
+issue: Derginin sayısı veya tarihi (String türünde)
+topic: Derginin konusu (String türünde)
+Enum (Publication)
+Publication enum'u, Book ve Magazine yapıları arasında bir yayını temsil eden iki varyant içerir.
